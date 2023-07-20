@@ -17,6 +17,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang='en'>
       <head>
+        <meta name='description' content='Next.js 13 Version Project' />
         <title>Next.js 13 Version Project</title>
       </head>
       <body>

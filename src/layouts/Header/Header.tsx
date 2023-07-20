@@ -1,10 +1,17 @@
 import { styled } from 'styled-components';
 
+import Link from 'next/link';
+
 const Header = () => {
   return (
     <StyledHeader>
-      <div>QANDA TEAM LOGO</div>
-      <nav>NAV AREA</nav>
+      <div>
+        <Link href={'/'}>QANDA TEAM LOGO</Link>
+      </div>
+      <StyledNav>
+        <Link href={'/static'}>Static 페이지로 가기</Link>
+        <Link href={'/dynamic'}>Dynamic 페이지로 가기</Link>
+      </StyledNav>
       <div>LANGUAGES AREA</div>
     </StyledHeader>
   );
@@ -20,6 +27,11 @@ const StyledHeader = styled.header`
   padding: 0 40px;
   z-index: 1001;
   background-color: ${({ theme }) => theme.colors.white};
+`;
+
+const StyledNav = styled.nav`
+  ${({ theme }) => theme.MIXINS.flexBox('row', 'center', 'space-between')}
+  gap: 10px;
 `;
 
 export default Header;
