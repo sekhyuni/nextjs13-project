@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <div>
-        <Link href={'/'}>QANDA TEAM LOGO</Link>
+        <Link href={'/'}>Some Company LOGO</Link>
       </div>
       <StyledNav>
         <Link href={'/static'}>Static 페이지로 가기</Link>

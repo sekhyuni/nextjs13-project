@@ -16,6 +16,6 @@
     "plugin:storybook/recommended"
   ],
   "rules": {
-    "no-unused-vars": "off"
+    "no-unused-vars": "error"
   }
 }

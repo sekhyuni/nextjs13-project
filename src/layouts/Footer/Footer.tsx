@@ -3,9 +3,9 @@ import { styled } from 'styled-components';
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledCompanyName>(주)매스프레소</StyledCompanyName>
+      <StyledCompanyName>(주)Some Company</StyledCompanyName>
       <StyledCopyright>
-        Copyright 2023 Mathpresso. All rights reserved.
+        Copyright 2023 Some Company. All rights reserved.
       </StyledCopyright>
     </StyledFooter>
   );
