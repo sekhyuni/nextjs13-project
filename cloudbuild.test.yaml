@@ -1,14 +1,4 @@
 steps:
-  - name: 'gcr.io/cloud-builders/git'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        if [[ "$BRANCH_NAME" == "feature" && "$(git symbolic-ref --short HEAD)" == "develop" ]]; then
-          exit 0
-        else
-          exit 1
-        fi
   - name: 'gcr.io/cloud-builders/yarn'
     args: ['install']
   - name: 'gcr.io/cloud-builders/yarn'
