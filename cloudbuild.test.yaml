@@ -1,16 +1,4 @@
 steps:
-  - name: 'gcr.io/cloud-builders/git'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        # PR의 base 브랜치가 develop이고 head 브랜치가 feature로 시작하는지 확인
-        if [[ "$BASE_BRANCH" == "develop" && "$HEAD_BRANCH" == feature/* ]]; then
-          echo "Pull Request from feature to develop. Proceeding..."
-        else
-          echo "Not a Pull Request from feature to develop. Exiting..."
-          exit 1
-        fi
   - name: 'gcr.io/cloud-builders/yarn'
     args: ['install']
   - name: 'gcr.io/cloud-builders/yarn'
